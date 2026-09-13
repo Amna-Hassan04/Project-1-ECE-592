@@ -1,0 +1,138 @@
+ECE 592 Project 1 — SUNBIRD Phase I Experiment Log
+
+Machine:
+SUNBIRD
+CPU: 2-socket Intel Xeon E5-2680 v3
+Benchmark CPU affinity: CPU 3
+Compiler: GCC 11.5.0
+Baseline optimization: -O0
+Architecture: x86-64
+
+============================================================
+CAPACITY EXPERIMENT
+============================================================
+
+Method:
+Randomized dependent pointer chasing.
+1,000,000 dependent loads per measurement.
+Pointer cycle generated with fixed seed 12345.
+Memory allocated with 64-byte alignment.
+Timing uses RDTSC/RDTSCP with LFENCE serialization.
+CPU affinity fixed to CPU 3.
+
+Wide sweep:
+4 KiB, 8 KiB, 16 KiB, 32 KiB, 64 KiB, 128 KiB,
+256 KiB, 512 KiB, 1 MiB, 2 MiB, 4 MiB, 8 MiB,
+16 MiB, 32 MiB, 64 MiB, 128 MiB.
+
+Wide-sweep timer units/access:
+4 KiB       16.8733
+8 KiB       16.0050
+16 KiB      16.1550
+32 KiB      16.3728
+64 KiB      20.8275
+128 KiB     21.9956
+256 KiB     26.5798
+512 KiB     41.7522
+1 MiB       49.5434
+2 MiB       47.0144
+4 MiB       48.9521
+8 MiB       49.8840
+16 MiB      50.3829
+32 MiB      58.3816
+64 MiB      119.5087
+128 MiB     163.6987
+
+Dense sweep:
+256 KiB through 512 KiB, 8 KiB increments.
+Raw data saved in:
+data/sunbird/capacity_dense_256k_512k.csv
+
+Important:
+Capacity values are NOT finalized from this experiment alone.
+Observed transitions may include cache capacity, replacement effects,
+TLB effects, and mapping effects.
+
+============================================================
+LINE SIZE EXPERIMENT
+============================================================
+
+Final method:
+64-byte-aligned base address.
+Two loads made dependent.
+Both relevant cache lines flushed before each trial.
+10,000 individual timing samples per offset.
+Timing uses RDTSC/RDTSCP with LFENCE serialization.
+CPU affinity fixed to CPU 3.
+
+Raw distributions:
+data/sunbird/line_dep_32_samples.txt
+data/sunbird/line_dep_64_samples.txt
+
+32-byte offset:
+n = 10000
+median = 252 timer units
+mean = 231 timer units
+p90 = 240 timer units
+p99 = 1020 timer units
+min = 220
+max = 1238
+
+64-byte offset:
+n = 10000
+median = 436 timer units
+mean = 415 timer units
+p90 = 425 timer units
+p99 = 969 timer units
+min = 405
+max = 10630
+
+Interpretation:
+32-byte offset remains within the same inferred cache line,
+allowing the dependent second load to benefit from the first load.
+64-byte offset moves to a different cache line and produces
+substantially higher dependent-load latency.
+
+Timing-only inference:
+Cache line size is strongly supported as approximately 64 bytes.
+
+Earlier line-size benchmark versions were exploratory and should
+NOT be used as final evidence because they changed working-set size
+with spacing or allowed independent loads to overlap.
+
+============================================================
+REPORT/REPRODUCIBILITY NOTES
+============================================================
+
+Phase I restriction:
+Do not use published cache specifications or PMU cache counters
+to determine the final timing-only values before the prediction freeze.
+
+Plots to retain:
+1. Capacity: working-set size vs timer units/access (wide sweep).
+2. Capacity: dense 256 KiB–512 KiB sweep.
+3. Line size: offset vs dependent-load timing/distribution.
+4. For line size, distributions/percentiles should be reported,
+   not only averages.
+
+All final cache-property claims should be made only after the
+remaining Phase I experiments provide supporting evidence.
+
+L2 associativity attempt (assoc_l2_clean_bench):
+- CPU affinity: core 3
+- Compiler: GCC 11.5.0
+- Optimization: -O0
+- Target stride: 32 KiB
+- L1 eviction: 12 lines, 4 KiB stride
+- Iterations: 1,000,000
+- Batch size: 1,000
+- Estimated target cost:
+  1 line  = 27.51
+  2 lines = 28.93
+  4 lines = 29.09
+  8 lines = 29.72
+  9 lines = 28.94
+  12 lines = 28.15
+  16 lines = 29.08
+- Result: no clear associativity transition through 16 target lines.
+- Interpretation: this address-spacing construction does not isolate L2 associativity; results are not used to claim L2 associativity.

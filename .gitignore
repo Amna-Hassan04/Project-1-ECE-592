@@ -1,0 +1,19 @@
+# Compiled executables
+benchmark
+latency_bench
+latency_overhead
+line_size_bench
+assoc_bench
+assoc_l2_bench
+assoc_l2_clean_bench
+assoc_large_bench
+
+# Assembly dumps
+*.asm
+
+# Backup archives
+*.tar.gz
+
+# Temporary files
+*.tmp
+*.log
