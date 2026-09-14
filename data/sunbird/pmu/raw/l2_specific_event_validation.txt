@@ -1,0 +1,3 @@
+128 KiB:            144,282      l2_rqsts.all_demand_references:u                                                   21,254      l2_rqsts.all_demand_miss:u                                             
+256 KiB:            140,890      l2_rqsts.all_demand_references:u                                                   18,368      l2_rqsts.all_demand_miss:u                                             
+512 KiB:            166,698      l2_rqsts.all_demand_references:u                                                   20,695      l2_rqsts.all_demand_miss:u                                             

@@ -1,0 +1,15 @@
+=== run1 ===
+       323,154,390      L1-dcache-load-misses:u                                               
+            23,188      L1-icache-load-misses:u                                               
+       322,821,704      l2_rqsts.all_demand_references:u                                      
+            29,414      l2_rqsts.all_demand_miss:u                                            
+=== run2 ===
+       318,686,270      L1-dcache-load-misses:u                                               
+            21,751      L1-icache-load-misses:u                                               
+       317,966,441      l2_rqsts.all_demand_references:u                                      
+            27,567      l2_rqsts.all_demand_miss:u                                            
+=== run3 ===
+       309,753,004      L1-dcache-load-misses:u                                               
+            21,384      L1-icache-load-misses:u                                               
+       309,805,634      l2_rqsts.all_demand_references:u                                      
+            27,315      l2_rqsts.all_demand_miss:u                                            
