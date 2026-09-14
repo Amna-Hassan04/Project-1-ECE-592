@@ -1,0 +1,6 @@
+=== 256 MiB ===
+     1,032,881,620      cache-misses:u                                                        
+=== 512 MiB ===
+            10,833      cache-misses:u                                                        
+=== 1024 MiB ===
+            10,471      cache-misses:u                                                        

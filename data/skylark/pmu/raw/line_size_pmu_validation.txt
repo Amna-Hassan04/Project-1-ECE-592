@@ -1,0 +1,4 @@
+=== 32 bytes ===
+         1,013,567      L1-dcache-load-misses:u                                               
+=== 64 bytes ===
+         2,144,520      L1-dcache-load-misses:u                                               

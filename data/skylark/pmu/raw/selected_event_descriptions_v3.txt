@@ -1,0 +1,31 @@
+  l2_cache_req_stat.ic_access_in_l2
+  l2_cache_req_stat.ic_dc_hit_in_l2
+  l2_cache_req_stat.ic_dc_miss_in_l2
+  l2_cache_req_stat.ic_fill_hit_s
+  l2_cache_req_stat.ic_fill_hit_x
+  l2_cache_req_stat.ic_fill_miss
+  l2_cache_req_stat.ls_rd_blk_c
+  l2_cache_req_stat.ls_rd_blk_cs
+  l2_cache_req_stat.ls_rd_blk_l_hit_s
+  l2_cache_req_stat.ls_rd_blk_l_hit_x
+  l2_cache_req_stat.ls_rd_blk_x
+       [L2 prefetch hit in L2. Use l2_cache_hits_from_l2_hwpf instead. Unit:
+  l3_comb_clstr_state.other_l3_miss_typs
+  xi_ccx_sdp_req1.all_l3_miss_req_typs
+       [L3 Cache Miss Latency. Total cycles for all transactions divided by
+  l2_cache_accesses_from_dc_misses
+  l2_cache_accesses_from_ic_misses
+  l2_cache_hits_from_dc_misses
+  l2_cache_hits_from_ic_misses
+  l2_cache_hits_from_l2_hwpf
+  l2_cache_misses_from_dc_misses
+  l2_cache_misses_from_ic_miss
+  l3_misses
+l2_cache:
+  all_l2_cache_accesses
+  all_l2_cache_hits
+  all_l2_cache_misses
+  l2_cache_accesses_from_l2_hwpf
+  l2_cache_misses_from_l2_hwpf
+  l3_read_miss_latency
+       [Average L3 Read Miss Latency (in core clocks)]

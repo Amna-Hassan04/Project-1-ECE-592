@@ -1,0 +1,4 @@
+    23,117,679,002      cycles:u                                                              
+     6,725,846,435      instructions:u                   #    0.29  insn per cycle            
+       274,225,626      cache-misses:u                                                        
+         1,319,618      L1-icache-load-misses:u                                               
