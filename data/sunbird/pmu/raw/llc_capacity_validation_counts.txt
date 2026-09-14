@@ -1,0 +1,3 @@
+16 MiB:              8,459      LLC-loads:u                                                                            70      LLC-load-misses:u                #    0.83% of all LL-cache accesses   
+32 MiB:             19,220      LLC-loads:u                                                                         1,301      LLC-load-misses:u                #    6.77% of all LL-cache accesses   
+64 MiB:             30,658      LLC-loads:u                                                                         1,349      LLC-load-misses:u                #    4.40% of all LL-cache accesses   
