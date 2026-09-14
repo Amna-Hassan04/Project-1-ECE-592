@@ -1,0 +1,48 @@
+=== 1 lines ===
+conflicting_lines=1
+iterations=1000000
+elapsed_timer_units=17159852
+timer_units_per_access=17.1599
+final_index=0
+=== 2 lines ===
+conflicting_lines=2
+iterations=1000000
+elapsed_timer_units=18424820
+timer_units_per_access=18.4248
+final_index=0
+=== 4 lines ===
+conflicting_lines=4
+iterations=1000000
+elapsed_timer_units=14999406
+timer_units_per_access=14.9994
+final_index=0
+=== 8 lines ===
+conflicting_lines=8
+iterations=1000000
+elapsed_timer_units=12375262
+timer_units_per_access=12.3753
+final_index=0
+=== 9 lines ===
+conflicting_lines=9
+iterations=1000000
+elapsed_timer_units=13057436
+timer_units_per_access=13.0574
+final_index=5
+=== 10 lines ===
+conflicting_lines=10
+iterations=1000000
+elapsed_timer_units=15919728
+timer_units_per_access=15.9197
+final_index=0
+=== 12 lines ===
+conflicting_lines=12
+iterations=1000000
+elapsed_timer_units=15560146
+timer_units_per_access=15.5601
+final_index=4
+=== 16 lines ===
+conflicting_lines=16
+iterations=1000000
+elapsed_timer_units=27594184
+timer_units_per_access=27.5942
+final_index=0

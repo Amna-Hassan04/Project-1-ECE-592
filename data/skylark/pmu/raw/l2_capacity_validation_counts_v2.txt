@@ -1,0 +1,6 @@
+=== 262144 bytes ===
+        95,002,766      l2_cache_misses_from_dc_misses:u                                      
+=== 524288 bytes ===
+       359,583,977      l2_cache_misses_from_dc_misses:u                                      
+=== 1048576 bytes ===
+       842,599,959      l2_cache_misses_from_dc_misses:u                                      

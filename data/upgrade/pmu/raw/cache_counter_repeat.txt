@@ -1,0 +1,15 @@
+6730
+
+ Performance counter stats for 'taskset -c 0 ./latency_bench 256K':
+
+         1,357,736      l2_rqsts.all_demand_references                                        
+            41,081      l2_rqsts.demand_data_rd_miss                                          
+            45,865      LLC-loads                                                             
+             1,334      LLC-load-misses                  #    2.91% of all LL-cache accesses  
+
+       2.240179912 seconds time elapsed
+
+       2.239106000 seconds user
+       0.001000000 seconds sys
+
+

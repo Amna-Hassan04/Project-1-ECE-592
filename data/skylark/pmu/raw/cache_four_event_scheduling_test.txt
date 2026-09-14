@@ -1,0 +1,4 @@
+     1,239,742,396      L1-dcache-load-misses:u                                               
+     1,239,742,396      l2_cache_accesses_from_dc_misses:u                                      
+       344,443,284      l2_cache_misses_from_dc_misses:u                                      
+       895,373,786      l2_cache_hits_from_dc_misses:u                                        

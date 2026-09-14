@@ -1,0 +1,10 @@
+=== 4M ===
+               816      LLC-load-misses                                                       
+=== 8M ===
+               666      LLC-load-misses                                                       
+=== 12M ===
+               889      LLC-load-misses                                                       
+=== 16M ===
+               709      LLC-load-misses                                                       
+=== 32M ===
+               753      LLC-load-misses                                                       
