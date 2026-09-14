@@ -1,0 +1,6 @@
+=== run 1: 2 MiB ===
+       427,568,628      l2_rqsts.demand_data_rd_miss                                          
+=== run 2: 2 MiB ===
+       419,344,265      l2_rqsts.demand_data_rd_miss                                          
+=== run 3: 2 MiB ===
+       488,307,081      l2_rqsts.demand_data_rd_miss                                          
