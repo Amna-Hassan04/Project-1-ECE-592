@@ -1,0 +1,38 @@
+        used and now evicted by L2 cache]
+  l2_rqsts.all_code_rd
+       [L2 code requests]
+  l2_rqsts.all_demand_data_rd
+       [Demand Data Read requests]
+  l2_rqsts.all_demand_miss
+       [Demand requests that miss L2 cache]
+  l2_rqsts.all_demand_references
+       [Demand requests to L2 cache]
+  l2_rqsts.all_pf
+       [Requests from the L1/L2/L3 hardware prefetchers or Load software
+        prefetches]
+  l2_rqsts.all_rfo
+       [RFO requests to L2 cache]
+  l2_rqsts.code_rd_hit
+       [L2 cache hits when fetching instructions, code reads]
+  l2_rqsts.code_rd_miss
+       [L2 cache misses when fetching instructions]
+  l2_rqsts.demand_data_rd_hit
+       [Demand Data Read requests that hit L2 cache]
+  l2_rqsts.demand_data_rd_miss
+       [Demand Data Read miss L2, no rejects]
+  l2_rqsts.miss
+       [All requests that miss L2 cache]
+  l2_rqsts.pf_hit
+       [Requests from the L1/L2/L3 hardware prefetchers or Load software
+        prefetches that hit L2 cache]
+  l2_rqsts.pf_miss
+       [Requests from the L1/L2/L3 hardware prefetchers or Load software
+        prefetches that miss L2 cache]
+  l2_rqsts.references
+       [All L2 requests]
+  l2_rqsts.rfo_hit
+       [RFO requests that hit L2 cache]
+  l2_rqsts.rfo_miss
+       [RFO requests that miss L2 cache]
+  l2_trans.l2_wb
+       [L2 writebacks that access L2 cache]
