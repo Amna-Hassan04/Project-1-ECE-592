@@ -2,37 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "timing.h"
 
 #define SAMPLES 1000000UL
 #define CHAIN_LENGTH 1000UL
 
-static inline uint64_t read_timer_start(void)
-{
-    uint32_t lo, hi;
 
-    asm volatile(
-        "lfence\n\t"
-        "rdtsc\n\t"
-        : "=a"(lo), "=d"(hi)
-        :
-        : "memory");
-
-    return ((uint64_t)hi << 32) | lo;
-}
-
-static inline uint64_t read_timer_end(void)
-{
-    uint32_t lo, hi;
-
-    asm volatile(
-        "rdtscp\n\t"
-        "lfence\n\t"
-        : "=a"(lo), "=d"(hi)
-        :
-        : "rcx", "memory");
-
-    return ((uint64_t)hi << 32) | lo;
-}
 
 /*
  * Perform 1000 dependent loads.
@@ -145,7 +120,6 @@ int main(int argc, char **argv)
     /*
      * Prevent the compiler from treating ptr as unused.
      */
-    asm volatile("" :: "r"(ptr) : "memory");
 
     free(order);
     free(memory);
