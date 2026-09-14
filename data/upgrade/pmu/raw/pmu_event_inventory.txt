@@ -1,0 +1,100 @@
+  bus-cycles                                         [Hardware event]
+  cache-misses                                       [Hardware event]
+  cpu-cycles OR cycles                               [Hardware event]
+  ref-cycles                                         [Hardware event]
+  L1-dcache-load-misses OR cpu/L1-dcache-load-misses/
+  L1-icache-load-misses OR cpu/L1-icache-load-misses/
+  LLC-load-misses OR cpu/LLC-load-misses/
+  LLC-store-misses OR cpu/LLC-store-misses/
+  bus-cycles OR cpu/bus-cycles/                      [Kernel PMU event]
+  cache-misses OR cpu/cache-misses/                  [Kernel PMU event]
+  cpu-cycles OR cpu/cpu-cycles/                      [Kernel PMU event]
+  ref-cycles OR cpu/ref-cycles/                      [Kernel PMU event]
+       [L1D miss outstandings duration in cycles]
+  l1d_pend_miss.pending_cycles
+  l1d_pend_miss.pending_cycles_any
+       [L2 cache misses when fetching instructions]
+  longest_lat_cache.miss
+       [Core-originated cacheable demand requests missed L3 Spec update:
+       [All retired memory instructions Supports address when precise (Precise
+  offcore_requests_outstanding.cycles_with_data_rd
+  offcore_requests_outstanding.cycles_with_demand_code_rd
+  offcore_requests_outstanding.cycles_with_demand_data_rd
+  offcore_requests_outstanding.cycles_with_demand_rfo
+        packed double precision FP instructions retired; some instructions
+       [Number of any Vector retired FP arithmetic instructions]
+  dsb2mite_switches.penalty_cycles
+       [Decode Stream Buffer (DSB)-to-MITE switch true penalty cycles]
+       [Retired Instructions who experienced Instruction L1 Cache true miss
+       [Retired Instructions who experienced Instruction L2 Cache true miss
+        front-end delivered no uops for a period of 128 cycles which was not
+        front-end delivered no uops for a period of 16 cycles which was not
+        front-end delivered no uops for a period of 2 cycles which was not
+        front-end delivered no uops for a period of 256 cycles which was not
+        front-end had at least 1 bubble-slot for a period of 2 cycles which
+        front-end had at least 2 bubble-slots for a period of 2 cycles which
+        front-end had at least 3 bubble-slots for a period of 2 cycles which
+        front-end delivered no uops for a period of 32 cycles which was not
+        front-end delivered no uops for a period of 4 cycles which was not
+        front-end delivered no uops for a period of 512 cycles which was not
+        front-end delivered no uops for a period of 64 cycles which was not
+        front-end delivered no uops for a period of 8 cycles which was not
+       [Cycles where a code fetch is stalled due to L1 instruction cache miss]
+  icache_64b.iftag_miss
+  idq.all_dsb_cycles_4_uops
+  idq.all_dsb_cycles_any_uops
+  idq.all_mite_cycles_4_uops
+  idq.all_mite_cycles_any_uops
+  idq.dsb_cycles
+  idq.dsb_cycles_any
+  idq.dsb_cycles_ok
+  idq.mite_cycles
+  idq.ms_cycles
+  idq.ms_dsb_cycles
+  idq_uops_not_delivered.cycles_0_uops_deliv.core
+  idq_uops_not_delivered.cycles_fe_was_ok
+       [Counts cycles FE delivered 4 uops or Resource Allocation Table (RAT)
+  idq_uops_not_delivered.cycles_le_1_uop_deliv.core
+  idq_uops_not_delivered.cycles_le_2_uop_deliv.core
+  idq_uops_not_delivered.cycles_le_3_uop_deliv.core
+  cycle_activity.cycles_l3_miss
+       [Cycles while L3 cache miss demand load is outstanding]
+       [Execution stalls while L3 cache miss demand load is outstanding]
+        completion is greater than 128 cycles Supports address when precise
+        completion is greater than 16 cycles Supports address when precise
+        completion is greater than 256 cycles Supports address when precise
+        completion is greater than 32 cycles Supports address when precise
+        completion is greater than 4 cycles Supports address when precise
+        completion is greater than 512 cycles Supports address when precise
+        completion is greater than 64 cycles Supports address when precise
+        completion is greater than 8 cycles Supports address when precise
+  offcore_requests_outstanding.cycles_with_l3_miss_demand_data_rd
+       [Core crystal clock cycles when this thread is unhalted and the other
+       [Core crystal clock cycles when the thread is unhalted]
+       [Core crystal clock cycles when at least one thread on the physical
+       [Core crystal clock cycles when this thread is unhalted and the other
+       [Reference cycles when the core is not in halt state]
+       [Core crystal clock cycles when the thread is unhalted]
+       [Core crystal clock cycles when at least one thread on the physical
+       [Core cycles when the thread is not in halt state]
+       [Core cycles when at least one thread on the physical core is not in
+       [Thread cycles when thread is not in halt state]
+       [Core cycles when at least one thread on the physical core is not in
+  cycle_activity.cycles_l1d_miss
+       [Cycles while L1 cache miss demand load is outstanding]
+  cycle_activity.cycles_l2_miss
+       [Cycles while L2 cache miss demand load is outstanding]
+  cycle_activity.cycles_mem_any
+       [Execution stalls while L1 cache miss demand load is outstanding]
+       [Execution stalls while L2 cache miss demand load is outstanding]
+       [Number of all retired NOP instructions Spec update: SKL091, SKL044
+  inst_retired.total_cycles_ps
+       [Number of cycles using always true condition applied to PEBS
+  int_misc.clear_resteer_cycles
+  int_misc.recovery_cycles
+       [Core cycles the allocator was stalled due to recovery from earlier
+  int_misc.recovery_cycles_any
+       [Core cycles the allocator was stalled due to recovery from earlier
+  lsd.cycles_4_uops
+  lsd.cycles_active
+  lsd.cycles_ok

@@ -1,0 +1,6 @@
+=== 8 conflicting lines ===
+       281,777,454      L1-dcache-load-misses:u                                               
+=== 9 conflicting lines ===
+       926,482,636      L1-dcache-load-misses:u                                               
+=== 10 conflicting lines ===
+     1,173,522,461      L1-dcache-load-misses:u                                               

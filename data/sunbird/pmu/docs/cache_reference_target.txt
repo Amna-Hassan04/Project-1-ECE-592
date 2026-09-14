@@ -1,0 +1,17 @@
+=== SUNBIRD VALIDATION TARGET ===
+Architecture:                            x86_64
+Model name:                              Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz
+
+=== GETCONF CACHE VALUES ===
+LEVEL1_ICACHE_SIZE                 32768
+LEVEL1_ICACHE_ASSOC                
+LEVEL1_ICACHE_LINESIZE             64
+LEVEL1_DCACHE_SIZE                 32768
+LEVEL1_DCACHE_ASSOC                8
+LEVEL1_DCACHE_LINESIZE             64
+
+=== LSCPU CACHE VALUES ===
+L1d cache:                               768 KiB (24 instances)
+L1i cache:                               768 KiB (24 instances)
+L2 cache:                                6 MiB (24 instances)
+L3 cache:                                60 MiB (2 instances)

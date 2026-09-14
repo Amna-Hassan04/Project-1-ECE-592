@@ -1,0 +1,9 @@
+=== 128K ===
+         1,352,426      l2_rqsts.all_demand_references                                        
+            41,290      l2_rqsts.demand_data_rd_miss                                          
+=== 256K ===
+         1,416,582      l2_rqsts.all_demand_references                                        
+            44,302      l2_rqsts.demand_data_rd_miss                                          
+=== 512K ===
+         1,361,831      l2_rqsts.all_demand_references                                        
+            42,014      l2_rqsts.demand_data_rd_miss                                          

@@ -1,0 +1,6 @@
+=== 524288 bytes ===
+        26,623,664      l2d_cache_refill:u                                                    
+=== 1048576 bytes ===
+       350,898,180      l2d_cache_refill:u                                                    
+=== 2097152 bytes ===
+       943,733,594      l2d_cache_refill:u                                                    
