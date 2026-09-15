@@ -1,0 +1,15 @@
+=== RUN 1 ===
+     1,056,055,344      L1-dcache-load-misses:u                                               
+     1,056,055,344      l2_cache_accesses_from_dc_misses:u                                      
+       316,665,315      l2_cache_misses_from_dc_misses:u                                      
+       739,369,687      l2_cache_hits_from_dc_misses:u                                        
+=== RUN 2 ===
+     1,116,435,171      L1-dcache-load-misses:u                                               
+     1,116,435,171      l2_cache_accesses_from_dc_misses:u                                      
+       337,464,053      l2_cache_misses_from_dc_misses:u                                      
+       779,009,088      l2_cache_hits_from_dc_misses:u                                        
+=== RUN 3 ===
+     1,264,016,753      L1-dcache-load-misses:u                                               
+     1,264,016,753      l2_cache_accesses_from_dc_misses:u                                      
+       365,118,690      l2_cache_misses_from_dc_misses:u                                      
+       898,957,700      l2_cache_hits_from_dc_misses:u                                        

@@ -1,0 +1,8 @@
+=== 4194304 bytes ===
+       159,557,874      LLC-load-misses                                                       
+=== 8388608 bytes ===
+       476,994,676      LLC-load-misses                                                       
+=== 16777216 bytes ===
+       870,435,579      LLC-load-misses                                                       
+=== 33554432 bytes ===
+       950,992,335      LLC-load-misses                                                       

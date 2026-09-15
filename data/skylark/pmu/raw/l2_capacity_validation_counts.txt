@@ -1,0 +1,9 @@
+=== 256 bytes ===
+event syntax error: 'all_l2_cache_accesses,all_l2_cache_misses'
+Unable to find event on a PMU of 'all_l2_cache_accesses'
+=== 524288 bytes ===
+event syntax error: 'all_l2_cache_accesses,all_l2_cache_misses'
+Unable to find event on a PMU of 'all_l2_cache_accesses'
+=== 1048576 bytes ===
+event syntax error: 'all_l2_cache_accesses,all_l2_cache_misses'
+Unable to find event on a PMU of 'all_l2_cache_accesses'

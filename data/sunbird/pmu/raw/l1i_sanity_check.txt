@@ -1,0 +1,2 @@
+            20,033      L1-icache-load-misses:u                                               
+     6,724,797,306      instructions:u                                                        

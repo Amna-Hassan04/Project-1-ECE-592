@@ -1,0 +1,14 @@
+=== MODEL ===
+Model name:                           Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz
+=== GETCONF ===
+LEVEL1_ICACHE_SIZE                 32768
+LEVEL1_ICACHE_ASSOC                
+LEVEL1_ICACHE_LINESIZE             64
+LEVEL1_DCACHE_SIZE                 32768
+LEVEL1_DCACHE_ASSOC                8
+LEVEL1_DCACHE_LINESIZE             64
+=== LSCPU CACHE ===
+L1d cache:                            256 KiB (8 instances)
+L1i cache:                            256 KiB (8 instances)
+L2 cache:                             2 MiB (8 instances)
+L3 cache:                             12 MiB (1 instance)

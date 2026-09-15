@@ -1,0 +1,8 @@
+    11,836,764,898      cycles                                                                
+     6,712,504,601      instructions                     #    0.57  insn per cycle            
+       292,261,606      L1-dcache-load-misses                                                 
+         1,169,156      L1-icache-load-misses                                                 
+       290,831,275      l2_rqsts.all_demand_references                                        
+           209,570      l2_rqsts.demand_data_rd_miss                                          
+           222,019      LLC-loads                                                             
+            90,911      LLC-load-misses                  #   40.95% of all LL-cache accesses  

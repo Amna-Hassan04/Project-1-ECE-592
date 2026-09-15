@@ -1,0 +1,3 @@
+run1:              9,769      LLC-loads:u                                                                         1,297      LLC-load-misses:u                #   13.28% of all LL-cache accesses   
+run2:             20,214      LLC-loads:u                                                                           224      LLC-load-misses:u                #    1.11% of all LL-cache accesses   
+run3:             10,707      LLC-loads:u                                                                            71      LLC-load-misses:u                #    0.66% of all LL-cache accesses   

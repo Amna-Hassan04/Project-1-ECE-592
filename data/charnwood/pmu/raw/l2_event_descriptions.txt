@@ -1,0 +1,11 @@
+       [Demand requests that miss L2 cache]
+  l2_rqsts.all_demand_references
+       [Demand requests to L2 cache]
+  l2_rqsts.all_pf
+       [Requests from the L1/L2/L3 hardware prefetchers or Load software
+--
+       [Demand Data Read requests that hit L2 cache]
+  l2_rqsts.demand_data_rd_miss
+       [Demand Data Read miss L2, no rejects]
+  l2_rqsts.miss
+       [All requests that miss L2 cache]

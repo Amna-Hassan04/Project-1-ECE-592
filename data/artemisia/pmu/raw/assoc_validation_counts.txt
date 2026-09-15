@@ -1,0 +1,8 @@
+=== 16 conflicting lines ===
+             9,948      L1-dcache-load-misses                                                 
+=== 17 conflicting lines ===
+             8,983      L1-dcache-load-misses                                                 
+=== 24 conflicting lines ===
+             9,504      L1-dcache-load-misses                                                 
+=== 32 conflicting lines ===
+             8,776      L1-dcache-load-misses                                                 
