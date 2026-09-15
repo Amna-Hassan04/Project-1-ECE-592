@@ -1,0 +1,18 @@
+=== 16 KiB ===
+             1,292      LLC-load-misses:u                                                     
+
+       0.002854148 seconds time elapsed
+
+       0.000000000 seconds user
+       0.002898000 seconds sys
+
+
+=== 64 KiB ===
+             1,300      LLC-load-misses:u                                                     
+
+       4.229872706 seconds time elapsed
+
+       4.215045000 seconds user
+       0.006978000 seconds sys
+
+

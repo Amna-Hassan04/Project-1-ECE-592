@@ -1,0 +1,15 @@
+=== run1 ===
+    12,271,196,795      cycles:u                                                              
+     6,724,794,978      instructions:u                   #    0.55  insn per cycle            
+            12,824      LLC-loads:u                                                           
+               189      LLC-load-misses:u                #    1.47% of all LL-cache accesses  
+=== run2 ===
+    12,489,414,466      cycles:u                                                              
+     6,724,797,169      instructions:u                   #    0.54  insn per cycle            
+            18,478      LLC-loads:u                                                           
+               282      LLC-load-misses:u                #    1.53% of all LL-cache accesses  
+=== run3 ===
+    12,354,153,174      cycles:u                                                              
+     6,724,796,689      instructions:u                   #    0.54  insn per cycle            
+            13,271      LLC-loads:u                                                           
+             1,407      LLC-load-misses:u                #   10.60% of all LL-cache accesses  

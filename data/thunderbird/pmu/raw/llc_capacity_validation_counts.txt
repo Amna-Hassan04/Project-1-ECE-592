@@ -1,0 +1,8 @@
+=== 1048576 bytes ===
+       326,520,685      ll_cache_miss_rd:u                                                    
+=== 2097152 bytes ===
+       963,103,514      ll_cache_miss_rd:u                                                    
+=== 4194304 bytes ===
+     1,002,260,556      ll_cache_miss_rd:u                                                    
+=== 8388608 bytes ===
+     1,003,088,459      ll_cache_miss_rd:u                                                    

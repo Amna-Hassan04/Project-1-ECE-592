@@ -1,0 +1,10 @@
+=== 8 lines ===
+           467,975      L1-dcache-load-misses                                                 
+=== 9 lines ===
+       832,309,334      L1-dcache-load-misses                                                 
+=== 10 lines ===
+     1,001,386,444      L1-dcache-load-misses                                                 
+=== 12 lines ===
+     1,001,425,510      L1-dcache-load-misses                                                 
+=== 16 lines ===
+     1,000,354,958      L1-dcache-load-misses                                                 

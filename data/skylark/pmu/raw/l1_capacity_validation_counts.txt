@@ -1,0 +1,6 @@
+=== 16384 bytes ===
+           274,813      L1-dcache-load-misses:u                                               
+       1.438429582 seconds time elapsed
+=== 65536 bytes ===
+     1,159,417,698      L1-dcache-load-misses:u                                               
+       3.603238673 seconds time elapsed

@@ -1,0 +1,4 @@
+       309,782,917      L1-dcache-load-misses:u                                               
+            19,901      L1-icache-load-misses:u                                               
+       309,171,610      l2_rqsts.all_demand_references:u                                      
+            25,828      l2_rqsts.all_demand_miss:u                                            

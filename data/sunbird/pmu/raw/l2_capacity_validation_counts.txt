@@ -1,0 +1,6 @@
+128 KiB:             34,526      L1-dcache-load-misses:u                                               
+               121      LLC-load-misses:u                                                     
+256 KiB:             36,821      L1-dcache-load-misses:u                                               
+             1,380      LLC-load-misses:u                                                     
+512 KiB:             52,062      L1-dcache-load-misses:u                                               
+             1,333      LLC-load-misses:u                                                     

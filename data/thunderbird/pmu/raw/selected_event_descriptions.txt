@@ -1,0 +1,83 @@
+  L1-dcache-loads OR armv8_pmuv3_0/L1-dcache-loads/
+  L1-dcache-load-misses OR armv8_pmuv3_0/L1-dcache-load-misses/
+  L1-icache-loads OR armv8_pmuv3_0/L1-icache-loads/
+  L1-icache-load-misses OR armv8_pmuv3_0/L1-icache-load-misses/
+  dTLB-loads OR armv8_pmuv3_0/dTLB-loads/
+--
+general:
+  cpu_cycles
+       [Cycle. Unit: armv8_pmuv3_0]
+
+l1d_cache:
+--
+l2_cache:
+  l2d_cache
+       [Level 2 data cache access. Unit: armv8_pmuv3_0]
+  l2d_cache_allocate
+       [Attributable Level 2 data cache allocation without refill. Unit:
+        armv8_pmuv3_0]
+  l2d_cache_inval
+       [L2D cache invalidate. Unit: armv8_pmuv3_0]
+  l2d_cache_rd
+       [L2D cache access,read. Unit: armv8_pmuv3_0]
+  l2d_cache_refill
+       [Level 2 data refill. Unit: armv8_pmuv3_0]
+  l2d_cache_refill_rd
+       [L2D cache refill,read. Unit: armv8_pmuv3_0]
+  l2d_cache_refill_wr
+       [L2D cache refill,write. Unit: armv8_pmuv3_0]
+  l2d_cache_wb
+       [Attributable Level 2 data cache write-back. Unit: armv8_pmuv3_0]
+  l2d_cache_wb_clean
+       [L2D cache Write-Back,cleaning and coherency. Unit: armv8_pmuv3_0]
+  l2d_cache_wb_victim
+       [L2D cache Write-Back,victim. Unit: armv8_pmuv3_0]
+  l2d_cache_wr
+       [L2D cache access,write. Unit: armv8_pmuv3_0]
+
+l3_cache:
+--
+
+ll_cache:
+  ll_cache_miss_rd
+       [Last level cache miss,read. Unit: armv8_pmuv3_0]
+  ll_cache_rd
+       [Attributable Last level cache memory read. Unit: armv8_pmuv3_0]
+
+memory:
+--
+        to CONTEXTIDR. Unit: armv8_pmuv3_0]
+  inst_retired
+       [Instruction architecturally executed. Unit: armv8_pmuv3_0]
+  sw_incr
+       [Instruction architecturally executed,Condition code check pass,
+--
+LL_Cache_Effectiveness:
+  ll_cache_read_hit_ratio
+       [This metric measures the ratio of last level cache read accesses hit
+        in the cache to the total number of last level cache accesses. This
+        gives an indication of the effectiveness of the last level cache for
+--
+        memory access or instruction fetch as this is a system level cache]
+  ll_cache_read_miss_ratio
+       [This metric measures the ratio of last level cache read accesses
+        missed to the total number of last level cache accesses. This gives an
+        indication of the effectiveness of the last level cache for read
+--
+        access or instruction fetch as this is a system level cache]
+  ll_cache_read_mpki
+       [This metric measures the number of last level cache read accesses
+        missed per thousand instructions executed]
+
+--
+        per thousand instructions executed]
+  ll_cache_read_mpki
+       [This metric measures the number of last level cache read accesses
+        missed per thousand instructions executed]
+
+--
+        indication of the effectiveness of the level 2 TLB]
+  ll_cache_read_miss_ratio
+       [This metric measures the ratio of last level cache read accesses
+        missed to the total number of last level cache accesses. This gives an
+        indication of the effectiveness of the last level cache for read

@@ -1,0 +1,9 @@
+=== 256 MiB ===
+event syntax error: 'l3_read_miss_latency'
+Unable to find event on a PMU of 'l3_read_miss_latency'
+=== 512 MiB ===
+event syntax error: 'l3_read_miss_latency'
+Unable to find event on a PMU of 'l3_read_miss_latency'
+=== 1024 MiB ===
+event syntax error: 'l3_read_miss_latency'
+Unable to find event on a PMU of 'l3_read_miss_latency'

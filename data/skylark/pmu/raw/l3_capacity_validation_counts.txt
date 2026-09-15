@@ -1,0 +1,6 @@
+=== 256 MiB ===
+   <not supported>      l3_misses:u                                                           
+=== 512 MiB ===
+   <not supported>      l3_misses:u                                                           
+=== 1024 MiB ===
+   <not supported>      l3_misses:u                                                           

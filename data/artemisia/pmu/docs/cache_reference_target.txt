@@ -1,0 +1,9 @@
+Model: Intel Xeon Gold 5420+
+L1D: 49152 bytes (48 KiB) per instance
+L1I: 32768 bytes (32 KiB) per instance
+L2: 2097152 bytes (2 MiB) per instance
+L3: 55050240 bytes (~52.5 MiB) per instance, 2 instances
+lscpu L1d aggregate: 2.6 MiB (56 instances)
+lscpu L1i aggregate: 1.8 MiB (56 instances)
+lscpu L2 aggregate: 112 MiB (56 instances)
+lscpu L3 aggregate: 105 MiB (2 instances)

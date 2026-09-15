@@ -1,0 +1,4 @@
+=== stride 32 bytes ===
+         1,059,828      L1-dcache-load-misses                                                 
+=== stride 64 bytes ===
+         2,067,496      L1-dcache-load-misses                                                 

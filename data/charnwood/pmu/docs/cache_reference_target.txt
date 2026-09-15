@@ -1,0 +1,9 @@
+Model: Intel Core i7-6700 CPU @ 3.40GHz
+L1D: 32768 bytes (32 KiB) per instance
+L1I: 32768 bytes (32 KiB) per instance
+L2: 262144 bytes (256 KiB) per instance
+L3: 8388608 bytes (8 MiB) shared, 1 instance
+lscpu L1d aggregate: 128 KiB (4 instances)
+lscpu L1i aggregate: 128 KiB (4 instances)
+lscpu L2 aggregate: 1 MiB (4 instances)
+lscpu L3 aggregate: 8 MiB (1 instance)

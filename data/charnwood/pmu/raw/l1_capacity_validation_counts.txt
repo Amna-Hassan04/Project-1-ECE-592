@@ -1,0 +1,8 @@
+=== 16384 bytes ===
+         2,747,223      L1-dcache-load-misses                                                 
+=== 32768 bytes ===
+       284,269,783      L1-dcache-load-misses                                                 
+=== 65536 bytes ===
+     1,036,070,849      L1-dcache-load-misses                                                 
+=== 131072 bytes ===
+     1,036,348,484      L1-dcache-load-misses                                                 

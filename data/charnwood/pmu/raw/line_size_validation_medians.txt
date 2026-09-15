@@ -1,0 +1,1 @@
+stride_64_median=496
