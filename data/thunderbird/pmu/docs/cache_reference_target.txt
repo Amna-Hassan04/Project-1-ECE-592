@@ -1,0 +1,16 @@
+=== THUNDERBIRD VALIDATION TARGET ===
+Architecture:                            aarch64
+Model name:                              Neoverse-N1
+
+=== GETCONF CACHE VALUES ===
+LEVEL1_ICACHE_SIZE                 0
+LEVEL1_ICACHE_ASSOC                0
+LEVEL1_ICACHE_LINESIZE             64
+LEVEL1_DCACHE_SIZE                 0
+LEVEL1_DCACHE_ASSOC                0
+LEVEL1_DCACHE_LINESIZE             64
+
+=== LSCPU CACHE VALUES ===
+L1d cache:                               5 MiB (80 instances)
+L1i cache:                               5 MiB (80 instances)
+L2 cache:                                80 MiB (80 instances)

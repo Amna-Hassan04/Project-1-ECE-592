@@ -1,0 +1,6 @@
+=== 1048576 bytes ===
+           380,223      l2_rqsts.demand_data_rd_miss                                          
+=== 2097152 bytes ===
+       364,532,778      l2_rqsts.demand_data_rd_miss                                          
+=== 4194304 bytes ===
+       967,732,133      l2_rqsts.demand_data_rd_miss                                          

@@ -1,0 +1,8 @@
+=== 32 bytes ===
+run1:          1,016,071      L1-dcache-load-misses:u                                                
+run2:          1,014,307      L1-dcache-load-misses:u                                                
+run3:          1,012,754      L1-dcache-load-misses:u                                                
+=== 64 bytes ===
+run1:          2,012,189      L1-dcache-load-misses:u                                                
+run2:          2,015,136      L1-dcache-load-misses:u                                                
+run3:          2,012,192      L1-dcache-load-misses:u                                                

@@ -1,0 +1,4 @@
+    12,496,129,146      cycles:u                                                              
+     6,724,796,686      instructions:u                   #    0.54  insn per cycle            
+            13,933      LLC-loads:u                                                           
+               166      LLC-load-misses:u                #    1.19% of all LL-cache accesses  
