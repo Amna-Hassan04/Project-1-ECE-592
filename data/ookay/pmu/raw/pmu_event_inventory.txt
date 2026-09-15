@@ -1,0 +1,21 @@
+=== CPU ===
+Architecture:                            x86_64
+CPU(s):                                  8
+On-line CPU(s) list:                     0-7
+Model name:                              Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz
+Thread(s) per core:                      2
+Core(s) per socket:                      4
+Socket(s):                               1
+CPU(s) scaling MHz:                      36%
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-7
+
+=== PERF VERSION ===
+perf version 6.8.12
+
+=== PMU EVENTS ===
+  L1-dcache-load-misses OR cpu/L1-dcache-load-misses/
+  LLC-loads OR cpu/LLC-loads/
+  LLC-load-misses OR cpu/LLC-load-misses/
+  l2_rqsts.all_demand_miss
+  l2_rqsts.all_demand_references

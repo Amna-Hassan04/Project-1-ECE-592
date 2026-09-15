@@ -1,0 +1,16 @@
+=== OOKAY VALIDATION TARGET ===
+Intel Core i7-7700 (Kaby Lake)
+
+=== SYSTEM CACHE VALUES ===
+LEVEL1_ICACHE_SIZE                 32768
+LEVEL1_ICACHE_ASSOC                
+LEVEL1_ICACHE_LINESIZE             64
+LEVEL1_DCACHE_SIZE                 32768
+LEVEL1_DCACHE_ASSOC                8
+LEVEL1_DCACHE_LINESIZE             64
+
+Model name:                              Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz
+L1d cache:                               128 KiB (4 instances)
+L1i cache:                               128 KiB (4 instances)
+L2 cache:                                1 MiB (4 instances)
+L3 cache:                                8 MiB (1 instance)

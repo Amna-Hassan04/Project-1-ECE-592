@@ -1,0 +1,30 @@
+=== L1-dcache-load-misses ===
+perf_event_attr:
+  type                             3 (PERF_TYPE_HW_CACHE)
+  config                           0x10000 (PERF_COUNT_HW_CACHE_RESULT_MISS | PERF_COUNT_HW_CACHE_OP_READ | PERF_COUNT_HW_CACHE_L1D)
+  sample_type                      IDENTIFIER
+sys_perf_event_open: pid 1238138  cpu -1  group_fd -1  flags 0x8 = 3
+=== l2_rqsts.all_demand_references ===
+perf_event_attr:
+  type                             4 (cpu)
+  config                           0xe724 (l2_rqsts.all_demand_references)
+  sample_type                      IDENTIFIER
+sys_perf_event_open: pid 1238144  cpu -1  group_fd -1  flags 0x8 = 3
+=== l2_rqsts.all_demand_miss ===
+perf_event_attr:
+  type                             4 (cpu)
+  config                           0x2724 (l2_rqsts.all_demand_miss)
+  sample_type                      IDENTIFIER
+sys_perf_event_open: pid 1238150  cpu -1  group_fd -1  flags 0x8 = 3
+=== LLC-loads ===
+perf_event_attr:
+  type                             3 (PERF_TYPE_HW_CACHE)
+  config                           0x2 (PERF_COUNT_HW_CACHE_RESULT_ACCESS | PERF_COUNT_HW_CACHE_OP_READ | PERF_COUNT_HW_CACHE_LL)
+  sample_type                      IDENTIFIER
+sys_perf_event_open: pid 1238156  cpu -1  group_fd -1  flags 0x8 = 3
+=== LLC-load-misses ===
+perf_event_attr:
+  type                             3 (PERF_TYPE_HW_CACHE)
+  config                           0x10002 (PERF_COUNT_HW_CACHE_RESULT_MISS | PERF_COUNT_HW_CACHE_OP_READ | PERF_COUNT_HW_CACHE_LL)
+  sample_type                      IDENTIFIER
+sys_perf_event_open: pid 1238162  cpu -1  group_fd -1  flags 0x8 = 3

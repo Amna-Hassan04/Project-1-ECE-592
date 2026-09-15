@@ -1,0 +1,5 @@
+  config                           0 (PERF_COUNT_HW_CPU_CYCLES)
+  config                           0x1 (PERF_COUNT_HW_INSTRUCTIONS)
+  config                           0x4 (PERF_COUNT_HW_BRANCH_INSTRUCTIONS)
+  config                           0x5 (PERF_COUNT_HW_BRANCH_MISSES)
+ Performance counter stats for 'taskset -c 0 true':

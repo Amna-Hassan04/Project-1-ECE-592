@@ -1,0 +1,15 @@
+  L1-dcache-loads OR cpu/L1-dcache-loads/
+  L1-dcache-load-misses OR cpu/L1-dcache-load-misses/
+  L1-dcache-stores OR cpu/L1-dcache-stores/
+  L1-icache-load-misses OR cpu/L1-icache-load-misses/
+  LLC-loads OR cpu/LLC-loads/
+  LLC-load-misses OR cpu/LLC-load-misses/
+  LLC-stores OR cpu/LLC-stores/
+  LLC-store-misses OR cpu/LLC-store-misses/
+--
+       [Demand Data Read requests]
+  l2_rqsts.all_demand_miss
+       [Demand requests that miss L2 cache]
+  l2_rqsts.all_demand_references
+       [Demand requests to L2 cache]
+  l2_rqsts.all_pf

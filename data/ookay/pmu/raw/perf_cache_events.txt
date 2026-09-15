@@ -1,0 +1,79 @@
+  L1-dcache-loads OR cpu/L1-dcache-loads/
+  L1-dcache-load-misses OR cpu/L1-dcache-load-misses/
+  L1-dcache-stores OR cpu/L1-dcache-stores/
+  LLC-loads OR cpu/LLC-loads/
+  LLC-load-misses OR cpu/LLC-load-misses/
+  LLC-stores OR cpu/LLC-stores/
+  LLC-store-misses OR cpu/LLC-store-misses/
+  l1d.replacement
+       [L2 cache lines filling L2]
+       [Counts the number of lines that are evicted by L2 cache when triggered
+        by an L2 cache fill. Those lines are in Modified state. Modified lines
+       [Counts the number of lines that are silently dropped by L2 cache when
+        triggered by an L2 cache fill. These lines are typically in Shared or
+        used and now evicted by L2 cache]
+  l2_rqsts.all_code_rd
+  l2_rqsts.all_demand_data_rd
+  l2_rqsts.all_demand_miss
+       [Demand requests that miss L2 cache]
+  l2_rqsts.all_demand_references
+       [Demand requests to L2 cache]
+  l2_rqsts.all_pf
+  l2_rqsts.all_rfo
+       [RFO requests to L2 cache]
+  l2_rqsts.code_rd_hit
+       [L2 cache hits when fetching instructions, code reads]
+  l2_rqsts.code_rd_miss
+       [L2 cache misses when fetching instructions]
+  l2_rqsts.demand_data_rd_hit
+       [Demand Data Read requests that hit L2 cache]
+  l2_rqsts.demand_data_rd_miss
+  l2_rqsts.miss
+       [All requests that miss L2 cache]
+  l2_rqsts.pf_hit
+        prefetches that hit L2 cache]
+  l2_rqsts.pf_miss
+        prefetches that miss L2 cache]
+  l2_rqsts.references
+  l2_rqsts.rfo_hit
+       [RFO requests that hit L2 cache]
+  l2_rqsts.rfo_miss
+       [RFO requests that miss L2 cache]
+       [L2 writebacks that access L2 cache]
+       [Retired load instructions with L2 cache hits as data sources Supports
+       [Retired load instructions missed L2 cache as data sources Supports
+       [Cycles while L2 cache miss demand load is outstanding]
+       [Execution stalls while L2 cache miss demand load is outstanding]
+        outstanding interval starts after LLC miss till return of first data
+        requests initiated by IA Cores, Processor Graphics Unit, or LLC. Unit:
+        controller. The outstanding interval starts after LLC miss till return
+       [L2 cache true misses per kilo instruction for retired demand loads]
+       [L2 cache hits per kilo instruction for all request types (including
+       [L2 cache hits per kilo instruction for all demand loads (including
+       [L2 cache true misses per kilo instruction for retired demand loads]
+       [L2 cache ([RKL+] true) misses per kilo instruction for all request
+       [L2 cache ([RKL+] true) misses per kilo instruction for all demand
+       [This metric estimates how often the CPU was stalled due to L2 cache
+       [L2 cache true code cacheline misses per kilo instruction]
+       [L2 cache speculative code cacheline misses per kilo instruction]
+       [Average per-core data fill bandwidth to the L2 cache [GB / sec]]
+       [L2 cache hits per kilo instruction for all request types (including
+       [L2 cache hits per kilo instruction for all demand loads (including
+       [L2 cache true misses per kilo instruction for retired demand loads]
+       [L2 cache ([RKL+] true) misses per kilo instruction for all request
+       [L2 cache ([RKL+] true) misses per kilo instruction for all demand
+       [Average per-thread data fill bandwidth to the L2 cache [GB / sec]]
+       [Average per-core data fill bandwidth to the L2 cache [GB / sec]]
+       [Average per-thread data fill bandwidth to the L2 cache [GB / sec]]
+       [This metric estimates how often the CPU was stalled due to L2 cache
+       [Average Parallel L2 cache miss data reads]
+       [Average Parallel L2 cache miss demand Loads]
+       [Average Latency for L2 cache miss demand Loads]
+       [L2 cache ([RKL+] true) misses per kilo instruction for all request
+       [Average Parallel L2 cache miss data reads]
+       [Average Latency for L2 cache miss demand Loads]
+       [Average Parallel L2 cache miss demand Loads]
+       [This metric estimates how often the CPU was stalled due to L2 cache
+       [This metric estimates how often the CPU was stalled due to L2 cache
+       [This metric estimates how often the CPU was stalled due to L2 cache
+       [This metric estimates how often the CPU was stalled due to L2 cache

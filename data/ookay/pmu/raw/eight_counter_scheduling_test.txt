@@ -1,0 +1,22 @@
+
+ Performance counter stats for 'taskset -c 0 true':
+
+         3,346,246      cycles                                                                  (60.19%)
+         2,254,234      instructions                     #    0.67  insn per cycle            
+            31,012      L1-dcache-load-misses                                                 
+           121,700      l2_rqsts.all_demand_references                                        
+            67,301      l2_rqsts.all_demand_miss                                              
+            12,683      LLC-loads                                                               (39.81%)
+     <not counted>      LLC-load-misses                                                         (0.00%)
+     <not counted>      branches                                                                (0.00%)
+
+       0.000844953 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001244000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
