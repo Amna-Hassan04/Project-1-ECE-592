@@ -1,0 +1,28 @@
+FROZEN HAZEL PREDICTION
+=======================
+
+Prediction target:
+  Machine: Hazel
+  Target CPU year: 2019
+
+Training data:
+  ECE machines only
+  Hazel excluded from training and prediction fitting
+
+Historical model:
+  log2(L2 capacity KiB) = slope * year + intercept
+
+Frozen model parameters:
+  slope = 0.344828
+  intercept = -687.112069
+  R^2 = 0.725953
+  implied doubling interval = 2.900 years
+
+Frozen prediction:
+  predicted log2(L2 capacity) = 9.095663
+  predicted L2 capacity = 547.10 KiB
+  predicted L2 capacity = 0.534 MiB
+
+Status:
+  FROZEN BEFORE HAZEL MEASUREMENT
+2026-09-16T16:15:29-04:00

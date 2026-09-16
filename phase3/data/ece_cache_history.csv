@@ -1,0 +1,9 @@
+year,vendor,isa,microarchitecture,machine,cpu,l2_capacity_kib
+2014,Intel,x86-64,Haswell,Sunbird,Xeon E5-2680 v3,256
+2015,Intel,x86-64,Skylake,Charnwood,Core i7-6700,256
+2017,Intel,x86-64,Kaby Lake,Ookay,Core i7-7700,256
+2017,Intel,x86-64,Coffee Lake,Upgrade,Core i7-8700,256
+2019,Intel,x86-64,Coffee Lake,Crux,Core i7-9700,256
+2019,AMD,x86-64,Zen 2,Skylark,EPYC 7532,512
+2020,Arm,AArch64,Neoverse-N1,Thunderbird,Ampere Altra Q80-30,1024
+2023,Intel,x86-64,Sapphire Rapids,Artemisia,Xeon Gold 5420+,2048

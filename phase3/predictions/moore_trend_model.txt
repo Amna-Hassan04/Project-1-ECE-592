@@ -1,0 +1,7 @@
+Frozen ECE Moore-style L2 trend model
+=====================================
+observations=8
+slope_log2_kib_per_year=0.344827586207
+intercept=-687.112068965455
+r_squared=0.725952813067
+implied_doubling_years=2.900000000000
