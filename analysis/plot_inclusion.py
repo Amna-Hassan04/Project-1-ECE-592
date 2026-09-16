@@ -187,3 +187,33 @@ for path in sorted(paths):
 print()
 print("INCLUSION/EXCLUSION ANALYSIS COMPLETE")
 print(f"Output directory: {OUT}")
+
+# ------------------------------------------------------------
+# Artemisia
+# ------------------------------------------------------------
+
+artemisia_rows = [
+    ("64 KiB", 7240.0),
+    ("2048 KiB", 7150.0),
+    ("64 KiB (L1/L2)", 7190.0),
+    ("2048 KiB (L1/L2)", 7128.0),
+]
+
+x = list(range(len(artemisia_rows)))
+y = [v for _, v in artemisia_rows]
+
+make_plot(
+    "artemisia",
+    x,
+    y,
+    "Eviction configuration",
+    "Median timer units",
+    "Artemisia — Inclusion experiment",
+    "artemisia_inclusion_phase1"
+)
+
+print(
+    "artemisia: "
+    + ", ".join(f"{label}={value:.2f}"
+                for label, value in artemisia_rows)
+)
