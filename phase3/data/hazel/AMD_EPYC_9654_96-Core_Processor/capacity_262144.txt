@@ -1,0 +1,5 @@
+Working set bytes: 262144
+Iterations: 1000000
+Elapsed timer units: 19581960
+Timer units/access: 19.5820
+Final index: 58790

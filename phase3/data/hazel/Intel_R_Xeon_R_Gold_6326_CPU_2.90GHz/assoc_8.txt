@@ -1,0 +1,5 @@
+conflicting_lines=8
+iterations=1000000
+elapsed_timer_units=23365318
+timer_units_per_access=23.3653
+final_index=0
