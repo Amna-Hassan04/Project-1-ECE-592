@@ -1,0 +1,21 @@
+ECE-only frozen Moore-style cache scaling model
+===============================================
+observations=8
+training_year_min=2014
+training_year_max=2023
+slope_log2_kib_per_year=0.344827586207
+intercept=-687.112068965517
+hazel_year=2020
+hazel_prediction_log2_kib=9.439655
+hazel_prediction_kib=694.42
+hazel_prediction_mib=0.6781
+future_year=2028
+future_prediction_log2_kib=12.198276
+future_prediction_kib=4699.45
+future_prediction_mib=4.5893
+
+The model was fit only to the ECE chronological dataset.
+Hazel observations were not used for refitting.
+Hazel timing-only capacity results are treated as transition
+evidence rather than exact cache-capacity measurements where
+the timing signature is ambiguous.
