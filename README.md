@@ -4,6 +4,62 @@ This repository contains the code, experimental data, analysis scripts, plots, a
 
 The project investigates CPU cache organization using timing-based microbenchmarks and hardware performance monitoring counters (PMUs). The work first reverse engineers cache properties on eight heterogeneous systems available in Prof. Samira Mirbagher Ajorpaz's lab and then evaluates the methodology on heterogeneous systems from the **NC State ECE Department Hazel HPC cluster**.
 
+
+## Repository Structure
+
+```text
+Project-1-ECE-592/
+├── src/                         # Core reverse-engineering benchmarks
+│   ├── common/                 # Shared pointer-chasing and timing interfaces
+│   ├── x86_64/                 # x86-64 timing implementation
+│   └── aarch64/                # AArch64 timing implementation
+│
+├── experiments/                # Experiment launch scripts
+│   └── capacity/
+│       └── run_sweep.sh
+│
+├── data/                       # Raw Phase-I and Phase-II measurements
+│   ├── sunbird/
+│   ├── charnwood/
+│   ├── skylark/
+│   ├── artemisia/
+│   ├── crux/
+│   ├── upgrade/
+│   ├── ookay/
+│   └── thunderbird/
+│
+├── analysis/                   # Phase-I analysis and visualization
+│   ├── analyze_phase1.py
+│   ├── plot_capacity.py
+│   ├── plot_associativity.py
+│   ├── plot_line_size.py
+│   ├── plot_latency.py
+│   └── plot_inclusion.py
+│
+├── phase3/                     # Cross-generation and Hazel validation
+│   ├── data/                   # ECE chronology + Hazel measurements
+│   ├── analysis/               # Hazel result analysis
+│   │   ├── capacity/
+│   │   ├── latency/
+│   │   ├── associativity/
+│   │   ├── line_size/
+│   │   └── inclusion/
+│   │
+│   ├── predictions/            # Frozen predictions and cache-evolution models
+│   │   ├── fit_moore_trend.py
+│   │   ├── moore_trend_model.txt
+│   │   ├── frozen_hazel_prediction.txt
+│   │   └── moore_trend/
+│   │       ├── plot_moore_chronology.py
+│   │       └── prediction_summary.txt
+│   │
+│   ├── plots/                  # Phase-III figures
+│   ├── inclusion_latency_bench # Inclusion/exclusion benchmark
+│   └── run_hazel_phase1.sh     # Hazel experiment launcher
+│
+└── README.md
+
+
 ## Project Overview
 
 The project is organized into three main phases:
@@ -74,57 +130,3 @@ The retained measurements include:
 - Intel Xeon Platinum 8462Y+ — Sapphire Rapids
 - AMD EPYC 9654 — Genoa
 - AMD EPYC 9655 — Genoa-or-newer
-
-## Repository Structure
-
-```text
-Project-1-ECE-592/
-├── src/                         # Core reverse-engineering benchmarks
-│   ├── common/                 # Shared pointer-chasing and timing interfaces
-│   ├── x86_64/                 # x86-64 timing implementation
-│   └── aarch64/                # AArch64 timing implementation
-│
-├── experiments/                # Experiment launch scripts
-│   └── capacity/
-│       └── run_sweep.sh
-│
-├── data/                       # Raw Phase-I and Phase-II measurements
-│   ├── sunbird/
-│   ├── charnwood/
-│   ├── skylark/
-│   ├── artemisia/
-│   ├── crux/
-│   ├── upgrade/
-│   ├── ookay/
-│   └── thunderbird/
-│
-├── analysis/                   # Phase-I analysis and visualization
-│   ├── analyze_phase1.py
-│   ├── plot_capacity.py
-│   ├── plot_associativity.py
-│   ├── plot_line_size.py
-│   ├── plot_latency.py
-│   └── plot_inclusion.py
-│
-├── phase3/                     # Cross-generation and Hazel validation
-│   ├── data/                   # ECE chronology + Hazel measurements
-│   ├── analysis/               # Hazel result analysis
-│   │   ├── capacity/
-│   │   ├── latency/
-│   │   ├── associativity/
-│   │   ├── line_size/
-│   │   └── inclusion/
-│   │
-│   ├── predictions/            # Frozen predictions and cache-evolution models
-│   │   ├── fit_moore_trend.py
-│   │   ├── moore_trend_model.txt
-│   │   ├── frozen_hazel_prediction.txt
-│   │   └── moore_trend/
-│   │       ├── plot_moore_chronology.py
-│   │       └── prediction_summary.txt
-│   │
-│   ├── plots/                  # Phase-III figures
-│   ├── inclusion_latency_bench # Inclusion/exclusion benchmark
-│   └── run_hazel_phase1.sh     # Hazel experiment launcher
-│
-└── README.md
