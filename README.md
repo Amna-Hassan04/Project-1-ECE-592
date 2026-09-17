@@ -79,40 +79,52 @@ The retained measurements include:
 
 ```text
 Project-1-ECE-592/
+├── src/                         # Core reverse-engineering benchmarks
+│   ├── common/                 # Shared pointer-chasing and timing interfaces
+│   ├── x86_64/                 # x86-64 timing implementation
+│   └── aarch64/                # AArch64 timing implementation
 │
-├── src/
-│   ├── common/
-│   │   ├── benchmark.c
-│   │   └── timing.h
-│   │
-│   ├── x86_64/
-│   │   └── timing.c
-│   │
-│   └── aarch64/
-│       └── timing.c
-│
-├── experiments/
+├── experiments/                # Experiment launch scripts
 │   └── capacity/
 │       └── run_sweep.sh
 │
-├── data/
-│   ├── sunbird/ 
-│   ├── thunderbird/
+├── data/                       # Raw Phase-I and Phase-II measurements
+│   ├── sunbird/
+│   ├── charnwood/
 │   ├── skylark/
 │   ├── artemisia/
-│   ├── charnwood/
 │   ├── crux/
 │   ├── upgrade/
-│   └── ookay/
+│   ├── ookay/
+│   └── thunderbird/
 │
-├── analysis/
-│   └── ...
+├── analysis/                   # Phase-I analysis and visualization
+│   ├── analyze_phase1.py
+│   ├── plot_capacity.py
+│   ├── plot_associativity.py
+│   ├── plot_line_size.py
+│   ├── plot_latency.py
+│   └── plot_inclusion.py
 │
-├── phase3/
-│   ├── data/
-│   ├── predictions/
-│   ├── plots/
-│   ├── analysis/
-│   └── report_data/
+├── phase3/                     # Cross-generation and Hazel validation
+│   ├── data/                   # ECE chronology + Hazel measurements
+│   ├── analysis/               # Hazel result analysis
+│   │   ├── capacity/
+│   │   ├── latency/
+│   │   ├── associativity/
+│   │   ├── line_size/
+│   │   └── inclusion/
+│   │
+│   ├── predictions/            # Frozen predictions and cache-evolution models
+│   │   ├── fit_moore_trend.py
+│   │   ├── moore_trend_model.txt
+│   │   ├── frozen_hazel_prediction.txt
+│   │   └── moore_trend/
+│   │       ├── plot_moore_chronology.py
+│   │       └── prediction_summary.txt
+│   │
+│   ├── plots/                  # Phase-III figures
+│   ├── inclusion_latency_bench # Inclusion/exclusion benchmark
+│   └── run_hazel_phase1.sh     # Hazel experiment launcher
 │
 └── README.md
